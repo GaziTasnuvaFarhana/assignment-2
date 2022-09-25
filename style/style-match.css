@@ -11,7 +11,8 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 50px;
-	height: 600px;
+	height: 100%;
+	width: 100%;
 	margin-bottom: 70px;
 }
 
@@ -21,7 +22,7 @@ body {
 
 @keyframes bannerMan {
 	0% {transform: none; left: 0px; top: 0;}
-	50% {transform: scale(1.15) rotateY(180deg); left: 50px; top: 20px;}
+	50% {transform: rotateY(180deg);}
 	100% {transform: scale(1) rotateY(360deg); left: 0px; top: 0;}
 }
 
@@ -216,4 +217,152 @@ footer hr {
 
 .social-media-links a {
 	text-decoration: none;
+}
+
+
+
+
+
+/* responsive */
+/* for phone */
+
+@media only screen and (max-width: 480px){
+	body {
+		width: 480px;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.banner-container{
+		width: 100%;
+		display: block;
+		height: 50%;
+	}
+	.banner-text h1{
+		font-size: 1rem;
+	}
+	.banner-text p{
+		font: .7rem;
+	}
+
+	.central-container{
+		display: block;
+	}
+
+	.side-nav {
+		display: block;
+	}
+	.item{
+		display: block;
+	}
+
+	.main-area{
+		display: block;
+	}
+
+	.view-btn{
+		display: block;
+		width: 30%;
+	}
+
+	.footer-container{
+		display: block;
+	}
+
+	.footer-item{
+		margin-bottom: 10px;
+	}
+	.social-media-links {
+		display: flex;
+	}
+
+	.social-media-links a{
+		display: block;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+	}
+	
+}
+
+
+
+/* for tablet */
+@media only screen and (max-width: 786px) {
+	body {
+		width: 768px;
+		width: 100%;
+	}
+	.banner-container{
+		height: 100%;
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		grid-template-columns: 1fr 1fr;
+	}
+	#banner-player{
+		position: relative;
+		left: 100px;
+		width: 250px;
+		height: 250px;
+		margin-top: 150px;
+		left: 0px;
+		bottom: 0px;
+	}
+
+	.banner-text h1{
+		font-size: 2rem;
+	}
+	.banner-text p{
+		font-size: 1rem;
+	}
+	.central-container{
+		display: block;
+		grid-template-rows: auto auto;
+	}
+	.side-nav{
+		display: flex;
+		margin: 0 auto;
+		width: 80%;
+		height: 100%;
+		margin-bottom: 20px;
+	}
+	.item{
+		margin: 5px auto;
+		height: 20px;
+		padding: 20px 12px;
+	}
+
+	.main-area{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 0 auto;
+	}
+	.card{
+		margin: 20px auto;
+		width: 90%;
+		
+	}
+
+	.view-btn{
+		display: block;
+		width: 30%;
+	}
+
+	.footer-container{
+		display: block;
+	}
+
+	.footer-item{
+		margin-bottom: 10px;
+	}
+	.social-media-links {
+		display: flex;
+	}
+
+	.social-media-links a{
+		display: block;
+		margin: 0;
+		padding: 0;
+		margin: 0 auto;
+	}
 }
